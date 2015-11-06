@@ -12,8 +12,7 @@ post '/sifatality' do
 end
 
 post '/nofatality' do
-	 "Jugador Wins..."
-	
+	erb :nofatality
 end
 
 get '/' do
@@ -31,5 +30,15 @@ end
 
 post '/pegar' do
 	@@energia2 = "50"
+	erb :fight
+end
+
+post '/volver' do 
+	@@energia2 = "100"
+	erb :fight
+end
+
+post '/' do
+	@@energia2 = "100"
 	erb :fight
 end
