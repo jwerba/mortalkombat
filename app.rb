@@ -15,3 +15,7 @@ end
 get '/' do
 	erb :fight
 end
+
+post '/fatality' do
+	erb :fatality
+end
