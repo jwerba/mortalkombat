@@ -10,4 +10,6 @@ end
 
 post '/nofatality' do
 	"Jugador Wins..."
+get '/' do
+	erb :fight
 end
