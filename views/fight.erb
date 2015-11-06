@@ -9,7 +9,7 @@
 				</tr>
 				<tr>
 					<td style="width:50%">Energia1: 100%</td>
-					<td style="width:50%">Energia2: 100%</td>
+					<td style="width:50%">Energia2: <%= @@energia2 %>%</td>
 				</tr>
 			</table>
 		</td>
@@ -23,6 +23,9 @@
 						</tr>
 						<tr style="width:100%">
 							<td style="width:50%; text-align: center">
+								<form action="/pegar" method="post">
+									<input type="submit" value="Pegar" id="pegar" name="pegar">
+								</form>			
 								<form action="/fatality" method="post">
 									<input type="submit" value="Ganar">
 								</form>						

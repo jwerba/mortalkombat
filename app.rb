@@ -1,5 +1,7 @@
 require 'sinatra'
 
+@@energia2 = "100"
+
 get '/fatality' do
 	erb :fatality
 end
@@ -18,4 +20,13 @@ end
 
 post '/fatality' do
 	erb :fatality
+end
+
+get '/fight' do
+	erb :fight
+end
+
+post '/pegar' do
+	@@energia2 = "50"
+	erb :fight
 end
