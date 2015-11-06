@@ -4,7 +4,7 @@ Feature:
 	Para ver sangre
 
 Scenario:
-	Given dado que estoy veo la pantalla de opcion fatality 
+	Given dado veo la pantalla "fatality"
 	When apreto el boton "nofatality"
 	Then debo ver la pantalla "Jugador Wins..."  
 
