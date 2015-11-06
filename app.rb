@@ -5,11 +5,13 @@ get '/fatality' do
 end
 
 post '/sifatality' do
-	"Jugador Wins, Fatality..."
+	#"Jugador Wins, Fatality..."
+	erb :sifatality
 end
 
 post '/nofatality' do
-	"Jugador Wins..."
+	 "Jugador Wins..."
+	
 end
 
 get '/' do
