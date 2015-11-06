@@ -8,4 +8,10 @@ class Juego
 		@energia2 = 100
 	end
 
+	def dar_punio_jugador(jugador)
+		if(jugador =="jugador1")
+		 @energia2 = @energia2 - 5
+		end
+	end
+
 end
