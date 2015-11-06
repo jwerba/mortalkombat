@@ -6,4 +6,5 @@ Feature:
 Scenario:
 	Given dado veo la pantalla "fight"
 	When apreto el boton "pegar"
-	Then debo ver la energia del P2 al "Energia2: 50%"  
+	Then debo ver la energia del P2 al "Energia2: 95%"  
+

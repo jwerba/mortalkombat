@@ -1,6 +1,8 @@
 require 'sinatra'
+require './lib/Juego'
 
 @@energia2 = "100"
+
 
 get '/fatality' do
 	erb :fatality
@@ -17,7 +19,8 @@ post '/nofatality' do
 end
 
 get '/' do
-	@@energia2 = "100"
+	@@juego = Juego.new
+	@@energia2 = @@juego.energia2
 	erb :fight
 end
 
@@ -30,6 +33,12 @@ get '/fight' do
 end
 
 post '/pegar' do
-	@@energia2 = "50"
-	erb :fight
+	@@juego.dar_punio_jugador("jugador1")
+	if(@@juego.energia2 <= 0)
+		erb :fatality
+	else
+		@@energia2 = @@juego.energia2
+		erb :fight
+	end
+
 end
