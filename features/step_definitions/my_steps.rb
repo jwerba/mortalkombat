@@ -3,7 +3,7 @@ Given(/^dado que estoy veo la pantalla de opcion fatality$/) do
 end
 
 When(/^apreto el boton "(.*?)"$/) do |arg1|
-  click_button("fatality")
+  click_button(arg1)
 end
 
 Then(/^debo ver la pantalla "(.*?)"$/) do |arg1|
@@ -25,3 +25,12 @@ end
 Then(/^debo ver la energia del P(\d+) al "(.*?)"$/) do |arg1, arg2|
    last_response.body.should =~ /#{arg2}/m
 end
+
+Given(/^dado que veo la pantalla de opcion nofatality$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+Given(/^dado veo la pantalla "(.*?)"$/) do |arg1|
+  visit '/'+arg1
+end
+
