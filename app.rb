@@ -17,6 +17,7 @@ post '/nofatality' do
 end
 
 get '/' do
+	@@energia2 = "100"
 	erb :fight
 end
 
